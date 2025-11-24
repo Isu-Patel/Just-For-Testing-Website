@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milan & Rutu Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">Milan & Rutu</h1>
+                <p class="tagline">Daily AI & Tech Insights</p>
+            </div>
+            <nav class="nav">
+                <a href="#" class="nav-link active">Blog</a>
+                <a href="#" class="nav-link">About</a>
+                <a href="https://github.com/Isu-Patel/Milan_Rutu_Project" target="_blank" class="nav-link">GitHub</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="controls">
+                <button onclick="fetchBlogPosts()" class="refresh-btn">🔄 Refresh Posts</button>
+                <button onclick="toggleAllBlogs()" class="show-all-btn" id="showAllBtn">📚 Show All Blogs</button>
+                <span class="monitor-status">🔍 Auto-monitoring every 30s</span>
+            </div>
+            <div class="blog-grid" id="blog-posts">
+                <div class="loading">Loading posts...</div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Milan & Rutu. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
